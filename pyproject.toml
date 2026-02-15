@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "liteslate"
+version = "1.0.0"
+description = "A distraction-free writing app — the free companion to TypeSlate"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.7"
+authors = [
+    { name = "Josh-writes" },
+]
+keywords = ["writing", "distraction-free", "editor", "tkinter"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: End Users/Desktop",
+    "Operating System :: Microsoft :: Windows",
+    "Programming Language :: Python :: 3",
+    "Topic :: Text Editors",
+]
+
+[project.urls]
+Homepage = "https://github.com/Josh-writes/LiteSlate"
+TypeSlate = "https://typeslate.com"
+
+[project.scripts]
+liteslate = "liteslate.app:LiteSlateApp"
+
+[tool.setuptools.packages.find]
+where = ["src"]
